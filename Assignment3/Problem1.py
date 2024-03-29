@@ -216,3 +216,19 @@ print('\ndagified graph:\n')
 for key, value in dagify(graph).items():
     print(key, value)
 
+test_case = {
+    'A': ['B'],
+    'B': ['C', 'D'],
+    'C': ['A', 'E', 'F'],
+    'D': ['E', 'F'],
+    'E': ['F', 'G', 'J'],
+    'F': ['B', 'G', 'H', 'J'],
+    'G': [],
+    'H': ['I'],
+    'I': ['C'],
+    'J': ['I']
+}
+
+print('\ndagified graph for test case:\n')
+for key, value in dagify(test_case).items():
+    print(key, value)
