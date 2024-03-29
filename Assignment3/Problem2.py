@@ -1,8 +1,8 @@
 """
-Problem 1
+Problem 2
 """
 
-# Problem 1 a
+# Problem 2 a
 
 # Each edge is a tuple (vertex1, vertex2, weight)
 graph = [
